@@ -1,3 +1,7 @@
+<form {{action 'submitArtist' on="submit"}}>
+  {{input value=(mut inputText)}}
+  <button type="submit">Find artist and events</button>
+</form>
 <h1><a href=>{{model.artist.name}}</a></h1>
 <img src={{model.artist.image_url}} width="300">
 <h2>Events</h2>
